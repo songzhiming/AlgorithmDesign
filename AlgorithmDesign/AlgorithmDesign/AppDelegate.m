@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "ListNode.h"
+#import "BinaryTree.h"
 
 @interface AppDelegate ()
 
@@ -18,28 +19,41 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    //链表的操作
-    //创建列表
-    ListNode *a = [ListNode addNode:nil andValue:@1];
-    ListNode *b = [ListNode addNode:a andValue:@2];
-    ListNode *c = [ListNode addNode:b andValue:@3];
-    ListNode *d = [ListNode addNode:c andValue:@4];
-    ListNode *e = [ListNode addNode:d andValue:@5];
-    [ListNode traveraslList:a resultBlock:^(NSInteger i) {
-        NSLog(@"i--%ld",i);
+//    //链表的操作
+//    //创建列表
+//    ListNode *a = [ListNode addNode:nil andValue:@1];
+//    ListNode *b = [ListNode addNode:a andValue:@2];
+//    ListNode *c = [ListNode addNode:b andValue:@3];
+//    ListNode *d = [ListNode addNode:c andValue:@4];
+//    ListNode *e = [ListNode addNode:d andValue:@5];
+//    [ListNode traveraslList:a resultBlock:^(NSInteger i) {
+//        NSLog(@"i--%ld",i);
+//    }];
+//    
+//    ListNode *re = [ListNode reverse:a];
+//    
+//    [ListNode traveraslList:re resultBlock:^(NSInteger i) {
+//        NSLog(@"j--%ld",i);
+//    }];
+    // 二叉树
+    BinaryTreeNode *node = [BinaryTree createTreeWithValues:@[@"4",@"2",@"7",@"1",@"3",@"9"]];
+    NSInteger  i = [BinaryTree depathOfBinaryTree:node];
+    NSLog(@"i---%ld",(long)i);
+    
+    ///////////////////////////
+//                   4
+//               2        7
+//            1     3         9
+    ///////////////////////
+    [BinaryTree treeFirstInformationWithNode:node resultBlock:^(NSInteger value) {
+        NSLog(@"Firstvalue---%ld",value);
     }];
-    
-    ListNode *re = [ListNode reverse:a];
-    
-    [ListNode traveraslList:re resultBlock:^(NSInteger i) {
-        NSLog(@"j--%ld",i);
+    [BinaryTree treeMiddleInfomationWithNode:node resultBlock:^(NSInteger value) {
+        NSLog(@"MidValue-----%ld",value);
     }];
-    
-    
-    // 约瑟夫闭环。。。。。
-    
-    
-    
+    [BinaryTree treeLastInformationWithNode:node resultBlock:^(NSInteger value) {
+        NSLog(@"lastValue-----%ld",value);
+    }];
     return YES;
 }
 

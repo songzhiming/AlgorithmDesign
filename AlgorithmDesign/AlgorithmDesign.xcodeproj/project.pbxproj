@@ -16,6 +16,8 @@
 		01381CA01F15D3AC0011B246 /* AlgorithmDesignTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 01381C9F1F15D3AC0011B246 /* AlgorithmDesignTests.m */; };
 		01381CAB1F15D3AD0011B246 /* AlgorithmDesignUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 01381CAA1F15D3AD0011B246 /* AlgorithmDesignUITests.m */; };
 		01381CBB1F15D48A0011B246 /* ListNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 01381CBA1F15D48A0011B246 /* ListNode.m */; };
+		01381CBF1F16079C0011B246 /* BinaryTreeNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 01381CBE1F16079C0011B246 /* BinaryTreeNode.m */; };
+		01381CC21F1608580011B246 /* BinaryTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 01381CC11F1608580011B246 /* BinaryTree.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,10 @@
 		01381CAC1F15D3AD0011B246 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		01381CB91F15D48A0011B246 /* ListNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListNode.h; sourceTree = "<group>"; };
 		01381CBA1F15D48A0011B246 /* ListNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListNode.m; sourceTree = "<group>"; };
+		01381CBD1F16079C0011B246 /* BinaryTreeNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BinaryTreeNode.h; sourceTree = "<group>"; };
+		01381CBE1F16079C0011B246 /* BinaryTreeNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BinaryTreeNode.m; sourceTree = "<group>"; };
+		01381CC01F1608580011B246 /* BinaryTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BinaryTree.h; sourceTree = "<group>"; };
+		01381CC11F1608580011B246 /* BinaryTree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BinaryTree.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +110,7 @@
 		01381C841F15D3AC0011B246 /* AlgorithmDesign */ = {
 			isa = PBXGroup;
 			children = (
+				01381CBC1F1607630011B246 /* BinaryTree(二叉树) */,
 				01381CB81F15D3D30011B246 /* ListNode(单向链表) */,
 				01381C881F15D3AC0011B246 /* AppDelegate.h */,
 				01381C891F15D3AC0011B246 /* AppDelegate.m */,
@@ -151,6 +158,17 @@
 				01381CBA1F15D48A0011B246 /* ListNode.m */,
 			);
 			path = "ListNode(单向链表)";
+			sourceTree = "<group>";
+		};
+		01381CBC1F1607630011B246 /* BinaryTree(二叉树) */ = {
+			isa = PBXGroup;
+			children = (
+				01381CBD1F16079C0011B246 /* BinaryTreeNode.h */,
+				01381CBE1F16079C0011B246 /* BinaryTreeNode.m */,
+				01381CC01F1608580011B246 /* BinaryTree.h */,
+				01381CC11F1608580011B246 /* BinaryTree.m */,
+			);
+			path = "BinaryTree(二叉树)";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,6 +307,8 @@
 				01381C8D1F15D3AC0011B246 /* ViewController.m in Sources */,
 				01381C8A1F15D3AC0011B246 /* AppDelegate.m in Sources */,
 				01381C871F15D3AC0011B246 /* main.m in Sources */,
+				01381CBF1F16079C0011B246 /* BinaryTreeNode.m in Sources */,
+				01381CC21F1608580011B246 /* BinaryTree.m in Sources */,
 				01381CBB1F15D48A0011B246 /* ListNode.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
