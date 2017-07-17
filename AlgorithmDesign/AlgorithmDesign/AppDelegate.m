@@ -9,6 +9,11 @@
 #import "AppDelegate.h"
 #import "ListNode.h"
 #import "BinaryTree.h"
+#import "SwapNumber.h"
+#import "BinarySearch.h"
+#import "BubbleSort.h"
+#import "QuickSort.h"
+#import "SelectSort.h"
 
 @interface AppDelegate ()
 
@@ -19,6 +24,19 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    //
+    [SwapNumber swapWithAlsoOr:1 b:2];
+    NSInteger a = [SwapNumber greatestCommonFactor:100 b:120];
+    NSInteger b = [BinarySearch binarySearchNoRecursion:@[@(1),@(3),@(5),@(7)] withKey:5];
+    NSInteger c = [BinarySearch binarySearchNoRecursion:@[@(1),@(3),@(5),@(7)] withKey:5];
+    
+    NSMutableArray *arr = [BubbleSort bubbleSort:@[@(100),@(11),@(1),@(55),@(111)].mutableCopy];
+    
+    NSMutableArray *arr1 = @[@(100),@(11),@(1),@(55),@(111)].mutableCopy;
+    [QuickSort quickSortWithArray:arr1 withLeft:0 andRight:arr1.count - 1];
+    NSMutableArray *arr2 = @[@(100),@(11),@(1),@(55),@(111)].mutableCopy;
+    [SelectSort selectSort:arr2];
+    
 //    //链表的操作
 //    //创建列表
 //    ListNode *a = [ListNode addNode:nil andValue:@1];
@@ -36,24 +54,26 @@
 //        NSLog(@"j--%ld",i);
 //    }];
     // 二叉树
-    BinaryTreeNode *node = [BinaryTree createTreeWithValues:@[@"4",@"2",@"7",@"1",@"3",@"9"]];
-    NSInteger  i = [BinaryTree depathOfBinaryTree:node];
-    NSLog(@"i---%ld",(long)i);
+//    BinaryTreeNode *node = [BinaryTree createTreeWithValues:@[@"4",@"2",@"7",@"1",@"3",@"9"]];
+//    NSInteger  i = [BinaryTree depathOfBinaryTree:node];
+//    NSLog(@"i---%ld",(long)i);
+//    
+//    ///////////////////////////
+////                   4
+////               2        7
+////            1     3         9
+//    ///////////////////////
+//    [BinaryTree treeFirstInformationWithNode:node resultBlock:^(NSInteger value) {
+//        NSLog(@"Firstvalue---%ld",value);
+//    }];
+//    [BinaryTree treeMiddleInfomationWithNode:node resultBlock:^(NSInteger value) {
+//        NSLog(@"MidValue-----%ld",value);
+//    }];
+//    [BinaryTree treeLastInformationWithNode:node resultBlock:^(NSInteger value) {
+//        NSLog(@"lastValue-----%ld",value);
+//    }];
     
-    ///////////////////////////
-//                   4
-//               2        7
-//            1     3         9
-    ///////////////////////
-    [BinaryTree treeFirstInformationWithNode:node resultBlock:^(NSInteger value) {
-        NSLog(@"Firstvalue---%ld",value);
-    }];
-    [BinaryTree treeMiddleInfomationWithNode:node resultBlock:^(NSInteger value) {
-        NSLog(@"MidValue-----%ld",value);
-    }];
-    [BinaryTree treeLastInformationWithNode:node resultBlock:^(NSInteger value) {
-        NSLog(@"lastValue-----%ld",value);
-    }];
+    
     return YES;
 }
 

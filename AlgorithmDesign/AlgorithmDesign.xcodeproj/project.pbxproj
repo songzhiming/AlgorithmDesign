@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		010F372F1F1C9F1E00ADEAE2 /* SwapNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 010F372E1F1C9F1E00ADEAE2 /* SwapNumber.m */; };
+		010F37331F1CBB0400ADEAE2 /* BinarySearch.m in Sources */ = {isa = PBXBuildFile; fileRef = 010F37321F1CBB0400ADEAE2 /* BinarySearch.m */; };
+		010F37371F1CC14400ADEAE2 /* BubbleSort.m in Sources */ = {isa = PBXBuildFile; fileRef = 010F37361F1CC14400ADEAE2 /* BubbleSort.m */; };
+		010F373B1F1D07F900ADEAE2 /* QuickSort.m in Sources */ = {isa = PBXBuildFile; fileRef = 010F373A1F1D07F900ADEAE2 /* QuickSort.m */; };
+		010F373F1F1D102700ADEAE2 /* SelectSort.m in Sources */ = {isa = PBXBuildFile; fileRef = 010F373E1F1D102700ADEAE2 /* SelectSort.m */; };
 		01381C871F15D3AC0011B246 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 01381C861F15D3AC0011B246 /* main.m */; };
 		01381C8A1F15D3AC0011B246 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 01381C891F15D3AC0011B246 /* AppDelegate.m */; };
 		01381C8D1F15D3AC0011B246 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01381C8C1F15D3AC0011B246 /* ViewController.m */; };
@@ -38,6 +43,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		010F372D1F1C9F1E00ADEAE2 /* SwapNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwapNumber.h; sourceTree = "<group>"; };
+		010F372E1F1C9F1E00ADEAE2 /* SwapNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwapNumber.m; sourceTree = "<group>"; };
+		010F37311F1CBB0400ADEAE2 /* BinarySearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BinarySearch.h; sourceTree = "<group>"; };
+		010F37321F1CBB0400ADEAE2 /* BinarySearch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BinarySearch.m; sourceTree = "<group>"; };
+		010F37351F1CC14400ADEAE2 /* BubbleSort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BubbleSort.h; sourceTree = "<group>"; };
+		010F37361F1CC14400ADEAE2 /* BubbleSort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BubbleSort.m; sourceTree = "<group>"; };
+		010F37391F1D07F900ADEAE2 /* QuickSort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuickSort.h; sourceTree = "<group>"; };
+		010F373A1F1D07F900ADEAE2 /* QuickSort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuickSort.m; sourceTree = "<group>"; };
+		010F373D1F1D102700ADEAE2 /* SelectSort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectSort.h; sourceTree = "<group>"; };
+		010F373E1F1D102700ADEAE2 /* SelectSort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectSort.m; sourceTree = "<group>"; };
 		01381C821F15D3AC0011B246 /* AlgorithmDesign.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlgorithmDesign.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01381C861F15D3AC0011B246 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		01381C881F15D3AC0011B246 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -87,6 +102,51 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		010F372C1F1C9F0C00ADEAE2 /* Swap */ = {
+			isa = PBXGroup;
+			children = (
+				010F372D1F1C9F1E00ADEAE2 /* SwapNumber.h */,
+				010F372E1F1C9F1E00ADEAE2 /* SwapNumber.m */,
+			);
+			path = Swap;
+			sourceTree = "<group>";
+		};
+		010F37301F1CBABE00ADEAE2 /* BinarySearch(二分查找) */ = {
+			isa = PBXGroup;
+			children = (
+				010F37311F1CBB0400ADEAE2 /* BinarySearch.h */,
+				010F37321F1CBB0400ADEAE2 /* BinarySearch.m */,
+			);
+			path = "BinarySearch(二分查找)";
+			sourceTree = "<group>";
+		};
+		010F37341F1CC13900ADEAE2 /* BubbleSort(冒泡排序) */ = {
+			isa = PBXGroup;
+			children = (
+				010F37351F1CC14400ADEAE2 /* BubbleSort.h */,
+				010F37361F1CC14400ADEAE2 /* BubbleSort.m */,
+			);
+			path = "BubbleSort(冒泡排序)";
+			sourceTree = "<group>";
+		};
+		010F37381F1D07EB00ADEAE2 /* QuickSort(快排) */ = {
+			isa = PBXGroup;
+			children = (
+				010F37391F1D07F900ADEAE2 /* QuickSort.h */,
+				010F373A1F1D07F900ADEAE2 /* QuickSort.m */,
+			);
+			path = "QuickSort(快排)";
+			sourceTree = "<group>";
+		};
+		010F373C1F1D101B00ADEAE2 /* SelectSort(选择排序) */ = {
+			isa = PBXGroup;
+			children = (
+				010F373D1F1D102700ADEAE2 /* SelectSort.h */,
+				010F373E1F1D102700ADEAE2 /* SelectSort.m */,
+			);
+			path = "SelectSort(选择排序)";
+			sourceTree = "<group>";
+		};
 		01381C791F15D3AC0011B246 = {
 			isa = PBXGroup;
 			children = (
@@ -110,6 +170,11 @@
 		01381C841F15D3AC0011B246 /* AlgorithmDesign */ = {
 			isa = PBXGroup;
 			children = (
+				010F373C1F1D101B00ADEAE2 /* SelectSort(选择排序) */,
+				010F37381F1D07EB00ADEAE2 /* QuickSort(快排) */,
+				010F37341F1CC13900ADEAE2 /* BubbleSort(冒泡排序) */,
+				010F37301F1CBABE00ADEAE2 /* BinarySearch(二分查找) */,
+				010F372C1F1C9F0C00ADEAE2 /* Swap */,
 				01381CBC1F1607630011B246 /* BinaryTree(二叉树) */,
 				01381CB81F15D3D30011B246 /* ListNode(单向链表) */,
 				01381C881F15D3AC0011B246 /* AppDelegate.h */,
@@ -305,9 +370,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				01381C8D1F15D3AC0011B246 /* ViewController.m in Sources */,
+				010F372F1F1C9F1E00ADEAE2 /* SwapNumber.m in Sources */,
 				01381C8A1F15D3AC0011B246 /* AppDelegate.m in Sources */,
 				01381C871F15D3AC0011B246 /* main.m in Sources */,
+				010F373F1F1D102700ADEAE2 /* SelectSort.m in Sources */,
+				010F37331F1CBB0400ADEAE2 /* BinarySearch.m in Sources */,
+				010F37371F1CC14400ADEAE2 /* BubbleSort.m in Sources */,
 				01381CBF1F16079C0011B246 /* BinaryTreeNode.m in Sources */,
+				010F373B1F1D07F900ADEAE2 /* QuickSort.m in Sources */,
 				01381CC21F1608580011B246 /* BinaryTree.m in Sources */,
 				01381CBB1F15D48A0011B246 /* ListNode.m in Sources */,
 			);
@@ -539,6 +609,7 @@
 				01381CB11F15D3AD0011B246 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		01381CB21F15D3AD0011B246 /* Build configuration list for PBXNativeTarget "AlgorithmDesignTests" */ = {
 			isa = XCConfigurationList;
@@ -547,6 +618,7 @@
 				01381CB41F15D3AD0011B246 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		01381CB51F15D3AD0011B246 /* Build configuration list for PBXNativeTarget "AlgorithmDesignUITests" */ = {
 			isa = XCConfigurationList;
@@ -555,6 +627,7 @@
 				01381CB71F15D3AD0011B246 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
